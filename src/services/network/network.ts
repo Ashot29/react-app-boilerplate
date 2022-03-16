@@ -48,7 +48,7 @@ class NetworkService {
                     Accept: 'application/json',
                     'Content-Type': 'application/json',
                 },
-                data: options.data || {},
+                data: options.data || {}, // this prop occurs CORS error
                 params: options.params || '',
                 paramsSerializer: (params) => qs.stringify(params),
                 timeout: options?.timeout ?? 10000,

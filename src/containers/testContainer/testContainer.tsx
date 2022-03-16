@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {EffectCallback, useEffect} from 'react';
 import Button from "../../components/button";
 import {useSelector, useDispatch} from 'react-redux';
 import {RootState} from "../../store/store";
