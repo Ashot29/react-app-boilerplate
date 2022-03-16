@@ -13,7 +13,7 @@ const TestContainer = (): JSX.Element => {
     return (
         <div>
             Test Container
-            {count}
+            <h1>{count}</h1>
             <Button handleClick={handleClick}/>
         </div>
     )
